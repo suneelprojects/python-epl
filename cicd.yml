@@ -1,0 +1,18 @@
+buildpack:
+  name: python
+appListProperties:
+  pythonVersion: 3.9
+  skipTest: false
+  dependencyPackageArchitecture: "linux_x_86_64"
+  enablePCCA: true
+  publish:
+    ucdPush: true
+  codeReviewSubAppID: app-1BDB
+  trufflehog:
+    enableScan: false
+  environment:
+    EMAIL_NOTIFICATION: suneel@socialprachar.com
+  SUPPORTING_REPOS:
+    branch: develop
+    path: https://github.wellsfargo.com/app-1BDB/1BDB-Python-EPL
+    repo: 1BDB-Python-EPL
